@@ -7,6 +7,32 @@ a shooting game using Vuforia and Unity for Interactive Video Game Development c
 ## Videos
 [![Infection Demo Video](https://img.youtube.com/vi/rb0jdlRIAbw/0.jpg)](https://www.youtube.com/watch?v=rb0jdlRIAbw)
 
+## Import & Compile the project
+
+Follows the steps performed in order to import and compile the project (2021) on MacOS:
+
+1. Download & Install Unity Hub and Unity 2017.2.0f3 that can be found in [Unity Archive](https://unity3d.com/es/get-unity/download/archive)
+2. Clone this repo and add `InfectionAR` folder as project from Unity Hub.
+3. Open the project and configure Unity:
+    - Install Android SDK (through Android Studio), patch it with this [tools](http://dl-ssl.google.com/android/repository/tools_r25.2.5-windows.zip)
+    - Install OpenJDK 8
+    - Add Vuforia Support to Unity by clicking in Player properties > XR Settings and follow directions from this link: [Unity Forum](https://forum.unity.com/threads/failed-install-of-unitysetup-vuforia-ar-support-for-editor-2018-2-2018-3.614887/)
+        - Change /Applications/Unity to /Applications/KAK
+        - Move the required install of unity to the Applications folder (in this case 2017.2.0f3)
+        - Rename that folder to "Unity"
+        - Run the installer package (Vuforia Support)
+        - Replace the folders to where they were afterwards, renaming them back to original. 
+    - Finally configure external tools in Unity > Preferences > External Tools.
+
+    ![](./img/external-tools.png)
+
+4. Create a new keystore:
+`keytool -genkey -v -keystore my-release-key.keystore -alias alias_name -keyalg RSA -keysize 2048 -validity 10000`
+5. Configure Player Settings with the new keystore.
+6. Build for Android Platform.
+
+> Note: No NDK is required, Unity License and project id is required to build the project.
+
 ## Tools
 * [Unity](https://unity3d.com/)
 * [Vuforia SDK](https://www.vuforia.com/)
