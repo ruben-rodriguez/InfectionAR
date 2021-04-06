@@ -229,8 +229,8 @@ PlayerSettings:
   AndroidTargetDevice: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: 
-  AndroidKeyaliasName: 
+  AndroidKeystoreName: /Users/ruben/source/vuforia/my-release-key.keystore
+  AndroidKeyaliasName: release
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
   AndroidEnableTango: 0
@@ -625,9 +625,9 @@ PlayerSettings:
     UNet: 1
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: 292481ed-f0f9-4335-8cf4-977b7bbee224
-  projectName: Vuforia Core Samples
-  organizationId: kross
+  cloudProjectId: 348d3253-16af-4552-830a-54f1b34a89eb
+  projectName: InfectionAR (6)
+  organizationId: rubrod
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
